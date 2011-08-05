@@ -1,0 +1,22 @@
+<div id="account_details" class="account_section">
+	<ul class="accountList">
+		<li><label>First Name: </label><%= account_details.firstname %></li>
+		<li><label>Last Name:</label><%= account_details.lastname %></li>
+		<li><label>City:</label><%= account_details.city %></li>
+		<li><label>State:</label><%= account_details.state %></li>
+	</ul>
+	<input type="button" id="editAccountBtn" value="Edit Account"/>
+	
+</div>
+
+<div id="editable_account_details" class="account_section">
+	<ul>
+	<li><label>First Name:</label><input type="text" value="<%= account_details.firstname %>" id="firstname_txt"/></li>
+	<li><label>Last Name:</label><input type="text" value="<%= account_details.lastname %>" id="lastname_txt"/></li>
+	<li><label>City:</label><input type="text" value="<%= account_details.city %>" id="city_txt"/></li>
+	<li><label>State:</label><input type="text" value="<%= account_details.state %>" id="state_txt"/></li>
+	<input type="button" id="cancelEditAccountBtn" value="Cancel Edit"/>
+	<input type="button" id="saveAccountBtn" value="Save"/>
+</div>
+			
+			
